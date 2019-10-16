@@ -16,7 +16,54 @@
 .main__content {
   width: 1358px;
   height: 707px;
-  background: url('../assets/images/bg1.jpg') 100% 100% no-repeat;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../assets/images/bg1.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 60px;
+}
+
+.main__title {
+  width: 520px;
+  margin-top: 200px;
+  margin-bottom: 33px;
+  font-size: 40px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  &--orange {
+    font-size: 40px;
+    color: #E3B873;
+  }
+}
+
+.main__text {
+  width: 500px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 22px;
+  color: #FFFFFF;
+  font-weight: 100;
+}
+
+.main__button {
+  width: 207px;
+  height: 51px;
+  margin-right: 20px;
+  background-color: #E3B873;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 13px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.main__button--transparent {
+  box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
 }
 
 .main__insta-link {
@@ -26,6 +73,17 @@
   text-transform: uppercase;
   text-decoration: none;
   transform: rotate(90deg);
+}
+
+.main__insta-link::after {
+  content: '';
+  display: block;
+  width: 51px;
+  height: 2px;
+  background-color: #E3B873;
+  position: relative;
+  top: -10px;
+  left: 100px;
 }
 
 @media (max-width: 1439px) {

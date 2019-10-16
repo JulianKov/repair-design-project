@@ -1,33 +1,230 @@
+.samples {
+  margin-top: 110px;  
+}
+
 .samples__wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1440px;
-  height: 750px;
+  height: 545px;
   box-sizing: border-box;
   margin: 0 auto;
-  background-color: rgba(252, 130, 73, 0.5);
-  border: 2px solid rgb(252, 130, 73);
 }
 
 .samples__description {
   width: 594px;
-  height: 350px;
-  border: 2px solid white;
+  height: 180px;
+  margin-top: 80px;
+  box-sizing: border-box;
+  padding-left: 100px;
+  text-align: left;
+}
+
+.samples__text {
+  width: 430px;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.samples__title {
+  width: 160px;
+  font-size: 27px;
+  color: #E3B873;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 38px;
+}
+
+
+.samples__title::after {
+  content: '';
+  display: block;
+  width: 92px;
+  height: 2px;
+  background-color: #E3B873;
+  position: relative;
+  top: -15px;
+  left: 180px;
+}
+
+.samples__slide-control {
+  display: flex;
+  width: 210px;
+  margin-top: -30px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.samples__arrow {
+  width: 40px;
+  height: 2px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.samples__arrow::before, .samples__arrow::after {
+  position: relative;
+  display: block;
+  content: '';
+  width: 9px;
+  height: 2px;
+  background-color: #FFFFFF;
+  left: -2px;
+}
+
+.samples__arrow::before {
+  top: 2px;
+  transform: rotate(45deg);
+}
+
+.samples__arrow::after {
+  top: -5px;
+  transform: rotate(-45deg);
+}
+
+.samples__arrow--right::before, .samples__arrow--right::after {
+  left: 33px;
+}
+
+.samples__arrow--right::before {
+  top: -2px;
+}
+
+.samples__arrow--right::after {
+  top: 0;
+}
+
+.samples__circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  opacity: 0.3;
+  cursor: pointer;
+  &--active {
+    opacity: 1;
+  }
 }
 
 .samples__slider {
   width: 844px;
   height: 750px;
-  border: 2px solid white;
   order: 4;
 }
 
+.samples__navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 620px;
+}
+
+.samples__link {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  cursor: pointer;
+  &--active {
+    color: #E3B873;
+    border-bottom: 2px solid #E3B873;
+  }
+  &:hover {
+    color: #E3B873;
+  }
+}
+
+.samples__slide-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.samples__slide {
+  width: 679px;
+  height: 482px;
+  background-image: url('../assets/images/slide1.jpg');
+  &--next {
+    width: 145px;
+    background-image: url('../assets/images/slide2.jpg');
+    background-position-x: -135px;
+  }
+}
+
+.samples__next-btn {
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  margin: 0;
+  margin-top: 205px;
+  background-color: #E3B873;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0px 0px 12px 1px #E3B873;
+  }
+}
+
+.samples__next-btn::before, .samples__next-btn::after {
+  position: relative;
+  display: block;
+  content: '';
+  width: 13px;
+  height: 3px;
+  background-color: #FFFFFF;
+}
+
+.samples__next-btn::before {
+  transform: rotate(45deg);
+  margin-left: 23px;
+  top: -3px;
+}
+
+.samples__next-btn::after {
+  transform: rotate(-45deg);
+  margin-left: 23px;
+  top: 3px;
+}
+
 .samples__data {
-  width: 594px;
-  height: 350px;
-  border: 2px solid white;
+  width: 370px;
+  height: 220px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.samples__block {
+  width: 185px;
+  height: 110px;
+  text-align: left;
+}
+
+.samples__head {
+  font-size: 18px;
+  color: #E3B873;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.samples__descr {
+  width: 100px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
 }
 
 
