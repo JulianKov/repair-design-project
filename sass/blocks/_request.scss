@@ -1,0 +1,14 @@
+.request__wrapper {
+  width: 1440px;
+  height: 750px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: rgba(252, 73, 243, 0.5);
+  border: 2px solid rgb(252, 73, 243);
+}
+
+@media (max-width: 1439px) {
+  .request {
+    display: none;
+  }
+}

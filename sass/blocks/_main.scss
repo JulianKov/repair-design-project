@@ -1,0 +1,36 @@
+.main__wrapper {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.main__insta-block {
+  width: 82px;
+  height: 707px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__content {
+  width: 1358px;
+  height: 707px;
+  background: url('../assets/images/bg1.jpg') 100% 100% no-repeat;
+}
+
+.main__insta-link {
+  font-weight: 400;
+  font-size: 14px;
+  color: #E3B873;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: rotate(90deg);
+}
+
+@media (max-width: 1439px) {
+  .main__wrapper {
+    height: 476px;
+    width: 375px;
+  }
+}

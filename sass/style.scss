@@ -1,3 +1,28 @@
+@import "./blocks/header";
+@import "./blocks/main";
+@import "./blocks/samples";
+@import "./blocks/features";
+@import "./blocks/types";
+@import "./blocks/request";
+@import "./blocks/gallery";
+@import "./blocks/price";
+@import "./blocks/about";
+@import "./blocks/team";
+@import "./blocks/reviews";
+@import "./blocks/questions";
+@import "./blocks/contacts";
+@import "./blocks/footer";
+
 body {
-  background-color: orange;
+  padding: 0;
+  margin: 0;
+  background-color: #131313;
+  text-align: center;
+  font-family: 'futura-demic-reg', Times, serif;
+}
+
+span {
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
 }
