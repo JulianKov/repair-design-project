@@ -1,10 +1,143 @@
 .request__wrapper {
+  display: flex;
+  flex-direction: row;
   width: 1440px;
   height: 750px;
-  box-sizing: border-box;
   margin: 0 auto;
-  background-color: rgba(252, 73, 243, 0.5);
-  border: 2px solid rgb(252, 73, 243);
+}
+
+.request__bg {
+  width: 779px;
+  height: 692px;
+  background-image: url('../assets/images/bg2.png');
+}
+
+.request__section {
+  width: 661px;
+}
+
+.request__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 506px;
+  height: 509px;
+  margin-left: 54px;
+  margin-top: 100px;
+  background-color: #131313;
+}
+
+.request__header {
+  width: 230px;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.request__block {
+  width: 408px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: left;
+}
+
+.request__field-title {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5)
+}
+
+.request__field-input {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.request__agreement {
+  width: 408px;
+  display: flex;
+  flex-direction: row;
+}
+
+.request__checkbox {
+  width: 18px;
+  height: 18px;
+  background-color: #E3B873;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.request__checkbox::before, .request__checkbox::after {
+  position: relative;
+  display: block;
+  content: '';
+  width: 13px;
+  height: 3px;
+  background-color: #FFFFFF;
+}
+
+.request__checkbox::before {
+  transform: rotate(45deg);
+  left: 1px;
+  top: 8px;
+  width: 8px;
+}
+
+.request__checkbox::after {
+  transform: rotate(-45deg);
+  left: 4px;
+  top: 4px;
+}
+
+.request__label {
+  font-size: 16px;
+  margin-left: 5px;
+  color: #FFFFFF;
+}
+
+.request__line {
+  width: 408px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.request__btn {
+  margin-right: 0;
+  width: 213px;
+  height: 51px;
+  background-color: #E3B873;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.request__promotion {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 506px;
+}
+
+.request__icon {
+  width: 72px;
+  height: 72px;
+  background-color: #E3B873;
+  border-radius: 50%;
+  background-image: url('../assets/images/icon3.svg');
+  background-repeat: no-repeat;
+  background-position: center, center;
+}
+
+.request__text {
+  width: 225px;
+  margin-left: 25px;
+  margin-top: 15px;
+  font-size: 20px;
+  color: #E3B873;
+  text-align: left;
+  font-weight: 600;
 }
 
 @media (max-width: 1439px) {

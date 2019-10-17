@@ -1,10 +1,10 @@
 .gallery__wrapper {
   width: 1440px;
-  height: 1020px;
-  box-sizing: border-box;
+  height: 1018px;
   margin: 0 auto;
-  background-color: rgba(252, 73, 88, 0.5);
-  border: 2px solid rgb(252, 73, 88);
+  background-image: url('../assets/images/bg3.jpg');
+  background-repeat: no-repeat;
+  background-position-y: 110px;
 }
 
 @media (max-width: 1439px) {
